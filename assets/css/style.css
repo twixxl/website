@@ -346,7 +346,6 @@ animation-timing-function: linear;
   background: rgba(20, 21, 24, 0.3);
   height: 60px;
   backdrop-filter: blur(10px);
-  backdrop-filter: saturation(10px);
 }
 #header .logo h1 {
   font-size: 28px;
