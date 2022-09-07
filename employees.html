@@ -82,26 +82,48 @@
 
   <body>
     <div class="settings" id="settings" data-aos="zoom-out">
-      <div style="padding: 1.5rem">
-        <div>
-          <span class="closebtn" onclick="settings.style.display='none';"
-            >&times;</span
-          >
-          <h1>Settings</h1>
-          <p>Configure the settings to your liking.</p>
-        </div>
-        <div class="theme-settings">
-          <h2>Theme</h2>
-          <div id="darkmode" class="darkmode-switch">
-            <label class="switch">
-              <input type="checkbox" id="checkBox" name="theme" />
-              <span class="slider"></span>
-            </label>
-            <span class="recommended">Recommended</span>
-          </div>
-        </div>
+    <div style="padding: 1.5rem;"> 
+     <div>
+    <span class="closebtn" onclick="settings.style.display='none';">&times;</span>
+    <h1>Settings</h1>
+    <p>Configure the settings to your liking.</p>
+    </div>
+    <div class="theme-settings">
+      <h1>Light / Dark</h1>
+      <div id="darkmode" class="darkmode-switch"><label class="switch">
+            <input type="checkbox" id="checkBox" name="theme" >
+            <span class="slider"></span>
+          </label>  <span class="recommended">Recommended</span></div> 
+
+      </div>
+      <div class="language">
+              <h1>Language</h2> 
+      </div>
+          <div class="language">
+        <div class="select-menu active">
+  <div class="select-btn">
+    <span class="sBtn-text">Select your language</span>
+    <i class="bx bx-chevron-down"></i>
+  </div>
+
+  <ul class="options">
+    <li class="option">
+      <span class="option-text">English</span>
+    </li>
+    <li class="option">
+      <span class="option-text">Arabic</span>
+    </li>
+    <li class="option">
+      <span class="option-text">Hindi</span>
+    </li>
+    <li class="option">
+      <span class="option-text">French</span>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
+  </div>
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
