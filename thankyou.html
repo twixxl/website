@@ -27,7 +27,7 @@
 <link rel="icon" href="assets/img/New_twixxl Logo_Rounded.svg">
  <!-- End of Meta Tags -->
 <!-- Website title -->
-<title>Welcome - twixxl</title>
+<title>Welcome - Twixxl</title>
 <!-- End of website title -->
 
 <head>
@@ -104,7 +104,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" class="img-fluid"> <span>twixxl</span></a></h1>
+        <h1><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" class="img-fluid"> <span>Twixxl</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -158,7 +158,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" height="34"> <span>twixxl</span></a></h3>
+              <h3><a href="index"><img src="/assets/img/New_twixxl Logo_Rounded.svg" alt="" height="34"> <span>Twixxl</span></a></h3>
               <p class="pb-3"><em>Your platform to meet the world and everyone in between.</em></p>
               <p>
                 <br>
@@ -211,7 +211,7 @@
 
     <div class="container">
       <div class="copyright">
-        Copyright &copy;2022 <strong><span>twixxl</span></strong>, All rights reserved.
+        Copyright &copy;2022 <strong><span>Twixxl</span></strong>, All rights reserved.
       </div>
       <div class="credits">
         <a href="">Privacy policy</a> | <a href="terms">Terms of service</a> | <a href="">Support</a>
@@ -270,6 +270,12 @@
     backdrop-filter: blur(10px);
   
 }
+#header.header-transparent {
+  background: rgba(20, 21, 24, 0.3);
+  height: 60px;
+  backdrop-filter: blur(10px);
+}
+
 </style>
 
 <div id="about-vid" class="modalvid">
@@ -498,7 +504,7 @@ function updateOsDownloadButton(osDetails) {
 </html>
 <style>
   #error-404 {
-    background: var(--hero);
+    background: var(--bg-panel);
     color: white;
     text-align: center;
     align-items: center;
@@ -589,36 +595,33 @@ function updateOsDownloadButton(osDetails) {
     box-shadow: 0 0.5em 0.5em -0.4em rgb(250 250 250 / 20%);
     transform: translateY(-0.25em);
   }
-  html[data-theme="dark"] {
-    --bg: #141518;
-    --bg-panel: #000000;
-    --color-headings: linear-gradient(170deg, #8224e3, #ed1e79);
-    --color-text: #fafafa;
-    --hero: #000;
-    --opacity: 0.9;
-    --opacity-hover: 1;
-    --search-bar: #141518;
-  }
-  html[data-theme="light"] {
-    --bg: #fff;
-    --bg-panel: #f5f5f5;
-    --color-headings: linear-gradient(170deg, #8224e3, #ed1e79);
-    --color-text: #000;
-    --hero: #141518;
-    --opacity: 1;
-    --opacity-hover: 0.9;
-    --search-bar: #fff;
-  }
-  html {
-    --bg: #fff;
-    --bg-panel: #f5f5f5;
-    --color-headings: linear-gradient(170deg, #8224e3, #ed1e79);
-    --color-text: #000;
-    --hero: #141518;
-    --opacity: 1;
-    --opacity-hover: 0.9;
-    --search-bar: #fff;
-  }
+ :root[data-theme='dark'] {
+  --bg: #141518;
+  --bg-panel: #090A0F;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
+  --color-text: #fafafa;
+  --hero: #090A0F;
+  --opacity: 0.9;
+  --opacity-hover: 1;
+}
+:root[data-theme='light'] {
+  --bg: #fff;
+  --bg-panel: #f5f5f5;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
+  --color-text: #000;
+  --hero: #141518;
+  --opacity: 1;
+  --opacity-hover: 0.9;
+}
+:root {
+  --bg: #fff;
+  --bg-panel: #f5f5f5;
+  --color-headings: linear-gradient(170deg,#8224e3, #ed1e79);
+  --color-text: #000;
+  --hero: #141518;
+   --opacity: 1;
+   --opacity-hover: 0.9;
+}
   .input_box .icon {
     position: relative;
     top: 25px;
