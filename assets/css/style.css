@@ -1352,6 +1352,18 @@ section {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+  border: solid var(--bg-panel);
+}
+.pricing .box:hover {
+  padding: 20px;
+  background: var(--bg);
+  text-align: center;
+  box-shadow: 0px 0px 4px var(--bg-panel);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  border: solid var(--color-text);
+  transition: all ease-in-out 0.3s;
 }
 .pricing h3 {
   font-weight: 400;
