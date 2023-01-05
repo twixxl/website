@@ -225,7 +225,7 @@ checkbox.addEventListener('change', function() {
     }
 })
 
-let theme = localStorage.getItem('theme') || "light"; // light theme by default
+let theme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
 if (theme === "dark") {
   // make dark mode
@@ -284,5 +284,17 @@ options.forEach((option) => {
     sBtn_text.innerText = selectedOption;
 
     optionMenu.classList.remove("active");
+  });
+});
+// radial glow effect on features
+console.clear();
+const featuresEl = document.querySelector(".icon=box");
+const featureEls = document.querySelectorAll(".features");
+
+featuresEl.addEventListener("pointermove", (ev) => {
+  featureEls.forEach((featureEl) => {
+    const rect = featureEl.getBoundingClientRect();
+    featureEl.style.setProperty("--x", ev.clientX - rect.left);
+    featureEl.style.setProperty("--y", ev.clientY - rect.top);
   });
 });
