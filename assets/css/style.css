@@ -347,6 +347,7 @@ animation-timing-function: linear;
 #header.header-scrolled {
   background: rgba(20, 21, 24, 0.3);
   height: 60px;
+  z-index: 998;
   backdrop-filter: blur(10px);
 }
 #header .logo h1 {
@@ -575,13 +576,13 @@ animation-timing-function: linear;
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/ThankYou-page-img.jpg");
+  background-size: cover;
   position: relative;
-  padding: 120px 0 0 0;
+  padding: 100px 0 0 0;
 }
 #hero:before {
   content: "";
-  background: var(--hero);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1058,10 +1059,7 @@ section {
   font-size: 16px;
 }
 .features .icon-box h3 a {
-   background-image: linear-gradient( 170deg,#8224e3,#ed1e79);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+   color: var(--color-text)
 }
 .features .icon-box h3 a:hover {
   background-image: linear-gradient( 170deg,#8224e3,#ed1e79);

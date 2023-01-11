@@ -109,22 +109,21 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">ThankYou</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
             
             <ul>
               <li><a style="cursor:pointer;" onclick="prefrence()" >Settings</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Docs</a></li>
+              <li class="dropdown"><a href="#"><span>Socials</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Tiktok</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Support server</a></li>
+                  <li><a href="#">YouTube</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
             </ul>
           </li>
         </ul>
@@ -138,7 +137,7 @@
     <section id="error-404" class="error-404">
       <div class="container">
         <div data-aos="zoom-out">
-          <h1>Thank you for Downloading twixxl</h1>
+          <h1>Thank you for downloading Twixxl</h1>
           <p id="errormessage"></p>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100">
@@ -180,7 +179,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Status</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="status">Status</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="terms">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -189,8 +188,8 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Jobs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Support</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="jobs">Jobs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="support">Support</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Licenses</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#download">Download</a></li>
@@ -211,7 +210,7 @@
 
     <div class="container">
       <div class="copyright">
-        Copyright &copy;2022 <strong><span>Twixxl</span></strong>, All rights reserved.
+        Copyright &copy;2022 - 2023 <strong><span>Twixxl</span></strong>, All rights reserved.
       </div>
       <div class="credits">
         <a href="">Privacy policy</a> | <a href="terms">Terms of service</a> | <a href="">Support</a>
@@ -269,11 +268,6 @@
     overflow-x: hidden;
     backdrop-filter: blur(10px);
   
-}
-#header.header-transparent {
-  background: rgba(20, 21, 24, 0.3);
-  height: 60px;
-  backdrop-filter: blur(10px);
 }
 
 </style>
@@ -504,7 +498,11 @@ function updateOsDownloadButton(osDetails) {
 </html>
 <style>
   #error-404 {
-    background: var(--bg-panel);
+    background: url(./assets/img/ThankYou-page-img.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    opacity: 1000;
     color: white;
     text-align: center;
     align-items: center;
@@ -515,7 +513,7 @@ function updateOsDownloadButton(osDetails) {
     backdrop-filter: blur(20px);
   }
   #error-404 h1 {
-    font-size: 80px;
+    font-size: 60px;
     background-image: linear-gradient(179deg, #8224e3, #ed1e79);
     -webkit-background-clip: text;
     background-clip: text;
