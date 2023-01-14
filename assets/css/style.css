@@ -6,12 +6,12 @@ body {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 100vh;
+  border-radius: 10px;
   background: transparent;
 }
 
@@ -20,12 +20,12 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(170deg,#8224e3, #ed1e79);;
-  border-radius: 100px;
+  border-radius: 10px;
   opacity: var(--opacity);
 }
 ::-webkit-scrollbar-thumb:hover {
-  opacity: var(--opacity-hover);
-  border-radius: 100px;
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .select-menu {
@@ -228,6 +228,7 @@ html.transition *:after {
    --opacity: 1;
    --opacity-hover: 0.9;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #141518;
@@ -315,7 +316,7 @@ animation-timing-function: linear;
   line-height: 0;
 }
 .back-to-top:hover {
-  opacity: var(--opacity-hover);
+ box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 .back-to-top.active {
@@ -1039,11 +1040,9 @@ section {
   align-items: center;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
-            background: var(--glass-bg);
+  background: var(--bg-panel);
   border-radius: 12px;
   transition: ease-in-out 0.3s;
-  border: solid 2px rgba(109, 109, 109, 0.3);
-   backdrop-filter: blur(10px);
    z-index: 0;
 }
 .features .icon-box i {
@@ -1068,9 +1067,11 @@ section {
   -webkit-text-fill-color: transparent;
 }
 .features .icon-box:hover {
+  background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   transform: scale(1.5);
   z-index: 9;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: sold 2px #6c757d;
 }
 
 
