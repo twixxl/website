@@ -286,15 +286,3 @@ options.forEach((option) => {
     optionMenu.classList.remove("active");
   });
 });
-// radial glow effect on features
-console.clear();
-const featuresEl = document.querySelector(".icon=box");
-const featureEls = document.querySelectorAll(".features");
-
-featuresEl.addEventListener("pointermove", (ev) => {
-  featureEls.forEach((featureEl) => {
-    const rect = featureEl.getBoundingClientRect();
-    featureEl.style.setProperty("--x", ev.clientX - rect.left);
-    featureEl.style.setProperty("--y", ev.clientY - rect.top);
-  });
-});
