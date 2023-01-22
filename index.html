@@ -941,7 +941,8 @@ document.querySelector("#close-modal-button").addEventListener('click', function
 
     set(ref(database, 'users/' + user.uid),{
       username: username ,
-      email: email
+      email: email ,
+      password: password
     })
     alert('User Created!')
     // ...
